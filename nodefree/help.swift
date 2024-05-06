@@ -38,9 +38,9 @@ public class Help {
         case 0:
             return "https://clashgithub.com/wp-content/uploads/rss/\(year!)"+mm+dd+".yml"
         case 1:
-            return "https://nodefree.org/dy/\(year!)/"+mm+"/"+dd+"/\(year!)"+mm+dd+".yaml"
+            return "https://nodefree.org/dy/\(year!)/"+mm+"/"+"/\(year!)"+mm+dd+".yaml"
         default:
-            return "https://nodefree.org/dy/\(year!)/"+mm+"/"+dd+"/\(year!)"+mm+dd+".yaml"
+            return "https://nodefree.org/dy/\(year!)/"+mm+"/"+"/\(year!)"+mm+dd+".yaml"
         }
         
     }
