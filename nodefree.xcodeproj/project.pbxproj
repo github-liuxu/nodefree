@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C91DF8B2BCBA75E0031F120 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C91DF8A2BCBA75E0031F120 /* main.cpp */; };
+		0C88349E2F2E0F8A000EC83A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88349D2F2E0F8A000EC83A /* main.swift */; };
 		0C91DFA02BCC19C20031F120 /* help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91DF9F2BCC19C20031F120 /* help.swift */; };
-		0C91DFA52BCC3BEC0031F120 /* restclient.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0C91DFA22BCC3BEC0031F120 /* restclient.cc */; };
-		0C91DFA62BCC3BEC0031F120 /* helpers.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0C91DFA32BCC3BEC0031F120 /* helpers.cc */; };
-		0C91DFA72BCC3BEC0031F120 /* connection.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0C91DFA42BCC3BEC0031F120 /* connection.cc */; };
 		0C91DFAF2BCC3FC70031F120 /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C91DFAE2BCC3FC10031F120 /* libcurl.tbd */; };
 /* End PBXBuildFile section */
 
@@ -38,17 +35,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C88349D2F2E0F8A000EC83A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0C91DF872BCBA75E0031F120 /* nodefree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nodefree; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C91DF8A2BCBA75E0031F120 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		0C91DF9E2BCC19C10031F120 /* nodefree-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nodefree-Bridging-Header.h"; sourceTree = "<group>"; };
 		0C91DF9F2BCC19C20031F120 /* help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = help.swift; sourceTree = "<group>"; };
-		0C91DFA22BCC3BEC0031F120 /* restclient.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = restclient.cc; sourceTree = "<group>"; };
-		0C91DFA32BCC3BEC0031F120 /* helpers.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cc; sourceTree = "<group>"; };
-		0C91DFA42BCC3BEC0031F120 /* connection.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connection.cc; sourceTree = "<group>"; };
-		0C91DFA92BCC3E3B0031F120 /* connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connection.h; sourceTree = "<group>"; };
-		0C91DFAA2BCC3E3B0031F120 /* restclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = restclient.h; sourceTree = "<group>"; };
-		0C91DFAB2BCC3E3B0031F120 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
-		0C91DFAC2BCC3E3B0031F120 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
 		0C91DFAE2BCC3FC10031F120 /* libcurl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.tbd; path = usr/lib/libcurl.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -84,34 +74,11 @@
 		0C91DF892BCBA75E0031F120 /* nodefree */ = {
 			isa = PBXGroup;
 			children = (
-				0C91DFA82BCC3E3B0031F120 /* restclient-cpp */,
-				0C91DFA12BCC3BEC0031F120 /* source */,
 				0C91DF8A2BCBA75E0031F120 /* main.cpp */,
+				0C88349D2F2E0F8A000EC83A /* main.swift */,
 				0C91DF9F2BCC19C20031F120 /* help.swift */,
-				0C91DF9E2BCC19C10031F120 /* nodefree-Bridging-Header.h */,
 			);
 			path = nodefree;
-			sourceTree = "<group>";
-		};
-		0C91DFA12BCC3BEC0031F120 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				0C91DFA22BCC3BEC0031F120 /* restclient.cc */,
-				0C91DFA32BCC3BEC0031F120 /* helpers.cc */,
-				0C91DFA42BCC3BEC0031F120 /* connection.cc */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		0C91DFA82BCC3E3B0031F120 /* restclient-cpp */ = {
-			isa = PBXGroup;
-			children = (
-				0C91DFA92BCC3E3B0031F120 /* connection.h */,
-				0C91DFAA2BCC3E3B0031F120 /* restclient.h */,
-				0C91DFAB2BCC3E3B0031F120 /* version.h */,
-				0C91DFAC2BCC3E3B0031F120 /* helpers.h */,
-			);
-			path = "restclient-cpp";
 			sourceTree = "<group>";
 		};
 		0C91DFAD2BCC3FC10031F120 /* Frameworks */ = {
@@ -182,10 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C91DFA02BCC19C20031F120 /* help.swift in Sources */,
-				0C91DFA72BCC3BEC0031F120 /* connection.cc in Sources */,
-				0C91DFA62BCC3BEC0031F120 /* helpers.cc in Sources */,
-				0C91DF8B2BCBA75E0031F120 /* main.cpp in Sources */,
-				0C91DFA52BCC3BEC0031F120 /* restclient.cc in Sources */,
+				0C88349E2F2E0F8A000EC83A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +286,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nodefree/nodefree-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -344,7 +308,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nodefree/nodefree-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 			};

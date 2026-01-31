@@ -6,7 +6,6 @@
 //
 
 #include <iostream>
-#include "restclient-cpp/restclient.h"
 #include <unistd.h>
 #include <fstream>
 #include "nodefree-Swift.h"
